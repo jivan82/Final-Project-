@@ -1,0 +1,118 @@
+.home {
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0px;
+  width: 100%;
+  gap: 1rem;
+  position: relative;
+
+  .slogan {
+    .slogan-title {
+      font-size: 4rem;
+      font-weight: 800;
+      .best {
+        color: var(--text-secondary);
+      }
+    }
+    .slogan-description {
+      color: #5c5c5f;
+      font-size: 1.1rem;
+    }
+    .appoint-btns {
+      gap: 1rem;
+      .appointment-btn {
+        background-color: var(--bg-secondary);
+        border: none;
+        border-radius: 8px;
+        padding: 1rem 1.4rem;
+        color: var(--text-primary);
+        font-size: 1.1rem;
+      }
+    }
+  }
+  .doctor-img img {
+    width: 100%;
+  }
+}
+
+.login-container {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  .login-logo {
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 55em) {
+  .home {
+    padding: 2.6rem 1.1rem;
+    .slogan-title {
+      font-size: 2.5rem !important;
+    }
+    .slogan-description {
+      font-size: 1rem !important;
+    }
+    .appoint-btns {
+      gap: 1rem;
+      .appointment-btn {
+        padding: 1rem 1rem !important;
+        font-size: 1rem !important;
+      }
+    }
+  }
+}
+
+.login-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  width: 100%;
+
+  .login-logo {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    background-color: #35b9ae;
+    align-items: center;
+
+    img {
+      height: 50vh;
+    }
+
+    svg {
+      height: 100%;
+      width: 100%;
+      fill: #ffffff;
+    }
+  }
+  .login-form {
+    flex: 2;
+    max-width: 40vw;
+    display: flex;
+    justify-content: center;
+    .firstdetails {
+      column-gap: 0.3rem;
+    }
+  }
+}
+@media screen and (max-width: 498px) {
+  .home {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .doctor-img img {
+    height: 30vh;
+  }
+  .login-container {
+    flex-direction: column;
+    gap: 0rem;
+    .login-logo {
+      display: none;
+    }
+    .login-form {
+      max-width: 100%;
+    }
+  }
+  .blood-img {
+    display: none;
+  }
+}
